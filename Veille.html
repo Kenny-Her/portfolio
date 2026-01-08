@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Architecture IA</title>
+    <link rel="stylesheet" href="assets/css/CSS Portfolio.css">
+    <style>
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .back-nav {
+            margin-bottom: 20px;
+        }
+
+        .btn-back {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-color);
+        }
+
+        header.article-header {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--primary-color); font-size: 2.2rem; margin-bottom: 10px; }
+        h2 { color: var(--primary-color); margin-top: 30px; border-left: 5px solid var(--accent-color); padding-left: 15px; }
+        h3 { color: #555; margin-top: 25px; }
+        
+        .meta-info {
+            color: #777;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="article-container">
+        <nav class="back-nav">
+            <a href="HTML Portfolio.html" class="btn-back">← Retour au Portfolio</a>
+        </nav>
+
+        <article>
+            <header class="article-header">
+                <h1>Au cœur de l'architecture : Comment sont structurées les applications d'IA ?</h1>
+                <p class="meta-info">Hernandez Kenny | BTS SIO - Option SLAM | Date : 05/10/2025</p>
+                <div>
+                    <span class="tag">#VeilleTechnologique</span>
+                    <span class="tag">#MLOps</span>
+                    <span class="tag">#Architecture</span>
+                </div>
+            </header>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>L'Intelligence Artificielle (IA) change radicalement la structure de nos applications. Pour un développeur SLAM, ce n'est pas un concept abstrait : nous passons d'un code basé sur des règles (if/else) à une logique basée sur des "modèles" entraînés à partir de données.</p>
+                <p>Cet article s'attaque à une question d'architecture logicielle : <strong>comment sont bâties les applications modernes de Deep Learning ?</strong></p>
+                <div class="highlight-box">
+                    On peut distinguer deux différentes parties dans ce type d’architecture logicielle :
+                    <ol>
+                        <li><strong>L'Usine d'Entraînement :</strong> La partie "Développement", où l'on programme et entraîne le modèle.</li>
+                        <li><strong>L'API d'Inférence :</strong> La partie "Production", où le modèle est utilisé pour faire des prédictions en temps réel.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Démarche de veille</h2>
+                <p>Pour analyser cette architecture, j'ai mis en place une veille ciblée sur les outils et méthodes de développement.</p>
+                <ul>
+                    <li><strong>Outils :</strong> Feedly (Flux RSS Google AI, NVIDIA, Microsoft) et daily.dev.</li>
+                    <li><strong>Critères :</strong> Sources de moins de 18 mois, documentation technique (TensorFlow, FastAPI) et Retours d'Expérience (REX).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Analyse des tendances</h2>
+                
+                <h3>Tendance 1 : L'Usine d'Entraînement</h3>
+                <p>C'est une chaîne de montage logicielle (pipeline) qui assemble plusieurs composants : préparation des données (Python, OpenCV), programmation du modèle (TensorFlow, PyTorch, architecture U-Net pour le médical) et suivi des essais (MLflow).</p>
+
+                <h3>Tendance 2 : L'API d'Inférence</h3>
+                <p>Le modèle entraîné (fichier .h5) est encapsulé dans un microservice web. Le développeur utilise un micro-framework (FastAPI, Flask) pour exposer un endpoint REST. L'application métier est ainsi découplée de la complexité de l'IA.</p>
+
+                <h3>Tendance 3 : Le MLOps</h3>
+                <p>La fusion des structures via une pipeline CI/CD. Un développeur pousse du code, l'entraînement se lance automatiquement, et si validé, l'API est déployée.</p>
+                
+                <div class="highlight-box">
+                    <strong>Impact SLAM :</strong> Python devient le langage "full-stack". Les compétences en API REST deviennent le pont indispensable entre la Data Science et les applications métier.
+                </div>
+            </section>
+
+            <section>
+                <h2>4. Applications pratiques</h2>
+                <p><strong>Exemple : Framework MONAI de NVIDIA.</strong> Utilisé pour construire des pipelines d'entraînement en imagerie médicale.</p>
+                <p><strong>Cas pratique : Triage de biopsies.</strong></p>
+                <ul>
+                    <li>Structure 1 (Usine) : Création du fichier <em>biopsy_model.v1.h5</em>.</li>
+                    <li>Structure 2 (API) : API REST avec FastAPI exposant <em>POST /triage</em>.</li>
+                    <li>Résultat : Le logiciel du labo consomme un JSON sans connaître la complexité interne.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Analyse critique</h2>
+                <p><strong>Limites :</strong> Complexité de maintenance, vieillissement du modèle (Data Drift) nécessitant un monitoring, et sécurité des API face aux attaques adverses.</p>
+                <p><strong>Marché :</strong> Opposition entre solutions propriétaires "boîte noire" (Siemens, Philips) et frameworks Open-Source (MONAI, PyTorch) qui demandent plus d'expertise mais offrent plus de contrôle.</p>
+            </section>
+
+            <section>
+                <h2>6. Conclusion</h2>
+                <p>Programmer une IA, c'est concevoir une architecture en deux parties reliées par le MLOps. Pour le développeur SLAM, notre rôle grandit : nous devenons les architectes de ces API robustes.</p>
+                <p>La prochaine étape sera la <strong>multimodalité</strong> : des API acceptant images, textes et données génomiques simultanément.</p>
+            </section>
+        </article>
+
+        <nav class="back-nav" style="margin-top: 40px; border-top: 1px solid #ddd; padding-top: 20px;">
+            <a href="HTML Portfolio.html" class="btn-back">← Retour au Portfolio</a>
+        </nav>
+    </main>
+
+</body>
+</html>

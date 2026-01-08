@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/CSS Portfolio.css">
+    <style>
+        .skills-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .skill-box {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        .skill-bar-bg {
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .skill-bar-fill {
+            height: 100%;
+            background: #3498db;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <nav class="navbar">
+    </nav>
+
+    <main>
+        <section id="introduction" class="divintroduction">
+            <div class="introtexte">
+                <h1 class="titre1">HERNANDEZ KENNY</h1>
+                <p class="texte1">Étudiant en deuxième année de BTS services informatiques aux organisations avec option SLAM (Solutions Logicielles et Applications Métier).</p>
+                <p>Après avoir partiellement poursuivi un BTS Biotechnologies, j'ai travaillé pendant deux ans en intérim, où j'ai pu développer des compétences en organisation et en adaptation. Aujourd'hui, je suis en reconversion professionnelle dans le domaine de l'informatique pour suivre une voie qui me motive profondément.</p>
+                <nav class="intro-nav">
+                    <ul class="intro-nav-links">
+                         <li><a href="#projets">Projets</a></li>
+                         <li><a href="#veille">Veille Technologique</a></li>
+                         <li><a href="#parcours">Mon Parcours</a></li>
+                         <li><a href="#compétences">Compétences</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <li><a href="assets/pdf/Cv_Kenny_Hernandez.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="assets/images/ma_photo.png" alt="Photo de Kenny Hernandez" class="photo-intro">
+       </section>
+
+        <section id="projets" class="divprojets">
+            <h2 class="titre3">Projets</h2>
+            <div class="projets-mise-en-forme">
+                <div class="projet-description">
+                    <h3>Projet GSB</h3>
+                    <p>Création d'une application web et mobile pour la gestion des compte rendus de visite.</p>
+                        <img src="assets/images/professionals.png" class="logo">
+                </div>
+                <div class="projet-description">
+                    <h3>Projets d'alternance</h3>
+                    <ul class="liste-projet">
+                        <li>Support informatique à l’organisation et aux utilisateurs.</li>
+                        <li>Déploiement et alimentation d’un ChatBot d'assistance.</li>
+                        <li>Gestion des bases de données du parc informatique.</li>
+                    </ul>
+                        <img src="assets/images/professionals.png" class="logo">
+                </div>
+                <div class="projet-description">
+                    <h3>Projet de stage</h3>
+                    <p>Développement d'un site web de formations informatiques en ligne.</p>
+                    <img src="assets/images/bachelor.png" class="logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="veille" class="divprojets">
+            <h2 class="titre3">Veille Technologique</h2>
+            <div class="projets-mise-en-forme">
+                <div class="projet-description" style="width: 100%; max-width: 800px; margin: 0 auto;">
+                    <h3>Architecture des Applications d'IA</h3>
+                    <p>Sujet : Comment sont structurées les applications modernes de Deep Learning ? Analyse de la séparation entre l'Usine d'Entraînement et l'API d'Inférence, et impact du MLOps sur le métier de développeur SLAM.</p>
+                    <p><em>Date : 05/10/2025</em></p>
+                    <a href="Veille.html" class="intro-nav-links" style="display: inline-block; margin-top: 10px; text-decoration: none; color: inherit; border: 1px solid currentColor; padding: 5px 15px; border-radius: 5px;">Lire une synthèse de l'article</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours">
+            <h2 class="titre3">Mon Parcours</h2>
+            <div class="resume-container">
+                <div class="resume-column">
+                    <h3>Expériences Professionnelles</h3>
+                    <div class="resume-item">
+                        <div class="resume-date">Sep. 2025 - Aujourd'hui</div>
+                        <div class="resume-title">Apprenti Technicien Informatique</div>
+                        <div class="resume-place">Cabinet Merlin, Lyon</div>
+                        <div class="resume-desc">
+                            <ul>
+                                <li>Support informatique à l’organisation</li>
+                                <li>Déploiement et alimentation d’un ChatBot</li>
+                                <li>Gestion des bases de données du parc informatique</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-date">Oct. 2024 - Aujourd'hui</div>
+                        <div class="resume-title">Employé Polyvalent</div>
+                        <div class="resume-place">E.Leclerc Drive, Lyon</div>
+                        <div class="resume-desc">
+                            <ul>
+                                <li>Préparation et livraison des commandes</li>
+                                <li>Gestion des stocks et réapprovisionnement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-date">Oct. 2022 - 2024</div>
+                        <div class="resume-title">Intérimaire</div>
+                        <div class="resume-place">R.A.S Intérim, Lyon</div>
+                        <div class="resume-desc">Missions variées : Manutention, Vente, Événementiel (Nuits de Fourvière).</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-date">Juill. 2022</div>
+                        <div class="resume-title">Technicien de laboratoire</div>
+                        <div class="resume-place">CARSO-LSEHL, Vénissieux</div>
+                        <div class="resume-desc">Analyse des métaux lourds dans les eaux usées et propres.</div>
+                    </div>
+                </div>
+
+                <div class="resume-column">
+                    <h3>Formations</h3>
+                    <div class="resume-item">
+                        <div class="resume-date">2024 - 2026</div>
+                        <div class="resume-title">BTS SIO - Option SLAM</div>
+                        <div class="resume-place">Maestris BTS, Lyon</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-date">Oct. - Déc. 2023</div>
+                        <div class="resume-title">Formation Logisticien Back-office</div>
+                        <div class="resume-place">SEPR, Lyon</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-date">2021 - 2022</div>
+                        <div class="resume-title">BTS Biotechnologies</div>
+                        <div class="resume-place">La Martinière Duchère</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="compétences" class="bloccompétences">
+          <h2 class="titre4">Compétences</h2>
+          <div class="skills-container">
+              <div class="skill-box">
+                  <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-info"><span>Python</span><span>70%</span></div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-info"><span>PHP</span><span>60%</span></div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-info"><span>Java</span><span>50%</span></div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-info"><span>SQL / Bases de données</span><span>75%</span></div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+              </div>
+          </div>
+        </section>
+
+        <section id="contact" class="blocformulaire">
+          <h2 class="titre5">Formulaire</h2>
+            <form class="divformulaire" action="https://formspree.io/f/xdkrolyq" method="POST">
+                <p class="texteformulaire"> Pour d'éventuelles informations supplémentaires,<br> contactez moi via ce formulaire</p>
+                  <input type="hidden" name="_subject" value="Nouveau contact depuis le Portfolio">
+                  <ul class="liste-formulaire">
+                      <li>
+                          <label for="nom">Nom complet</label>
+                          <input type="text" id="nom" name="nom-utilisateur" required/>
+                      </li>
+                      <li>
+                          <label for="mail">Mail</label>
+                          <input type="email" id="mail" name="email" required/>
+                      </li>
+                      <li>
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message-utilisateur" required></textarea>
+                      </li>
+                      <li class="form-button">
+                          <button type="submit">Envoyer</button>
+                      </li>
+                  </ul>
+            </form>
+        </section>
+    </main>
+
+    <aside class="barre-sociale">
+        <a href="https://fr.linkedin.com/in/kenny-hernandez?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="lien-social">
+            <img src="assets/images/linkedin.png" alt="LinkedIn" class="icone">
+        </a>
+        <a href="https://www.instagram.com/kenny_hnz" target="_blank" class="lien-social">
+            <img src="assets/images/instagram.png" alt="Instagram" class="icone">
+        </a>
+        <a href="mailto:kennyher11@gmail.com" class="lien-social">
+            <img src="assets/images/mail.png" alt="Email" class="icone">
+        </a>
+        <a href="tel:0664521248" class="lien-social">
+            <img src="assets/images/telephone.png" alt="Numéro de tel" class="icone">
+        </a>
+    </aside>
+</body>
+</html>
